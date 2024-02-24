@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.messageH1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+/* h3 {
+  font-size: ;
+} */
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.heroSection {
+  padding-left: 50px;
+  padding-right: 0px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftCol {
+  width: 40%;
+}
+
+.pageHeader {
+  width: 100%;
+}
+
+.heroProducts {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.serviceDiv {
+  width: auto;
+  height: auto;
+  background-color: #0c3959;
+  padding: 5px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.rightCol {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
+.heroImage {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.section2 {
+  background-color: #0c3959;
+  padding: 40px;
+  margin-top: 2px;
+}
+
+.subHeadTxt {
+  color: #fff;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.viewBtn {
+  border: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.section3 {
+  padding: 40px;
+}
+
+.subHeadTxt2 {
+  color: #000;
+}
+
+.projects2 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.services {
+  width: 250px;
+  height: 300px;
+  background-color: #0c3959;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesTxt {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.aboutHero {
+  margin-top: -30px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.buildCTA {
+  background-color: #a8e4f9;
+  border: 0;
+  border-radius: 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.aboutTxt {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.aboutTxt2 {
+  margin-top: 20px;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.mission {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  background-color: #0c3959;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.teamMember {
+  width: 150px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px;
+}
+
+.partnersTxt {
+  background-color: #0c3959;
+  color: #fff;
+  font-size: large;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.aboutCTA {
+  margin-top: 20px;
+}
+
+/* .work {
+  border-bottom: #fff;
+  border-width: 20px;
+} */
+
+.projectTitle {
+  background-color: #d9d9d9;
+  /* width: 100%; */
+  height: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.projectDiv {
+  width: 30%;
+  height: auto;
+  /* background-color: red; */
+}
+
+.projectImg {
+  height: 100%;
+}
+
+.projectDiv2 {
+  width: 60%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.joinDiv {
+  width: 40%;
+  height: 500px;
+}
+
+.joinImg {
+  height: 100%;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* align-items: center; */
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.formInput {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #0c3959;
+}
+
+.formBtn {
+  border: 0;
+  border-radius: 10px;
+  background-color: #a8e4f9;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+}

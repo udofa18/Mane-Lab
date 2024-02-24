@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #0c3959;
+  flex-direction: "row";
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.headerLogo {
+  height: 30px;
+  width: 100px;
+  color: #fff;
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+
+  gap: 70px;
+  justify-content: space-between;
+}
+
+.hearderTxt {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buildCTA {
+  background-color: #a8e4f9;
+  border: 0;
+  border-radius: 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #0c3959;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 2px;
+}
+
+.left-footer {
+  width: 35%;
+}
+
+.leftFooterTxt {
+  color: #fff;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: right;
+  /* text-align: right; */
+}
+
+.rightFooterTxt {
+  color: #fff;
+  text-align: right;
+}
+
+.rightFooterLink {
+  color: #eeff00;
+  text-decoration: none;
+}
+
+.iconDiv {
+  justify-content: end;
+
+  gap: 10px;
+  display: flex;
+}
+
+.footerIcons {
+  color: #fff;
+}
