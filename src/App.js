@@ -7,6 +7,11 @@ import Message from "./Pages/Message";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Projects from "./Pages/Projects";
 import NoPage from "./Pages/NoPage";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faFolder } from "@fortawesome/free-regular-svg-icons";
+
+library.add(fas, faFolder);
 
 export default function App() {
   return (

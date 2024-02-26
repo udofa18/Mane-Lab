@@ -1,37 +1,39 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./styles.css";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Header() {
   return (
     <div className="header">
-      <a href="/home">
+      <Link to="/home">
         {" "}
         <img
           src={require("../images/manelogo.png")}
           alt="mane-logo"
           className="headerLogo"
         />
-      </a>
+      </Link>
 
       <div className="headerLinks">
-        <a href="/home" className="hearderTxt">
+        <Link to="/home" className="hearderTxt">
           Home
-        </a>
-        <a href="/about" className="hearderTxt">
+        </Link>
+        <Link to="/about" className="hearderTxt">
           About
-        </a>
-        <a href="/projects" className="hearderTxt">
+        </Link>
+        {/* <Link to="#projects" className="hearderTxt">
           Projects
-        </a>
-        <a href="joinus" className="hearderTxt">
+        </Link> */}
+        <Link to="/joinus" className="hearderTxt">
           Join Our Team
-        </a>
+        </Link>
       </div>
 
-      <a href="/message">
+      <Link to="/message">
         <Button className="buildCTA">Build Your Projects</Button>
-      </a>
+      </Link>
     </div>
   );
 }

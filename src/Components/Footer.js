@@ -27,7 +27,7 @@ export default function Footer() {
         <p className="rightFooterTxt">Let's work together.</p>
         <p className="rightFooterTxt">
           Shoot us an{" "}
-          <a href="" className="rightFooterLink">
+          <a href="mailto:Manelabs01@gmail.com" className="rightFooterLink">
             email
           </a>{" "}
           and we will respond as soon as possible.

@@ -36,28 +36,66 @@ export default function About() {
       </div>
 
       <div className="team">
-        <h2 className="subHeadTxt">Our Team</h2>
+        <div>
+          <h2 className="ourTeamTxt">Our Team</h2>
+        </div>
 
         <div className="projects2">
-          <div className="teamMember">
-            <img src="" alt="" />
+          <div className="teamDiv">
+            <div className="teamMember">
+              <img
+                src={require("../images/Gbolahan.png")}
+                alt="co-founder"
+                className="teamImg"
+              />
+            </div>
+            <p className="memberName">Gbolahan</p>
+            <p className="memberRole">Co-Founder</p>
           </div>
 
-          <div className="teamMember">
-            <img src="" alt="" />
+          <div className="teamDiv">
+            <div className="teamMember">
+              <img
+                src={require("../images/vlad.png")}
+                alt="co-founder"
+                className="teamImg"
+              />
+            </div>
+            <p className="memberName">Abiodun</p>
+            <p className="memberRole">Co-Founder</p>
           </div>
 
-          <div className="teamMember">
-            <img src="" alt="" />
+          <div className="teamDiv">
+            <div className="teamMember">
+              <img
+                src={require("../images/Daniel.png")}
+                alt=""
+                className="teamImg"
+              />
+            </div>
+            <p className="memberName">Daniel</p>
+            <p className="memberRole">Software Developer</p>
           </div>
 
-          <div className="teamMember">
-            <img src="" alt="" />
+          <div className="teamDiv">
+            <div className="teamMember">
+              <img
+                src={require("../images/Isaac.png")}
+                alt=""
+                className="teamImg"
+              />
+            </div>
+            <p className="memberName">Isaac</p>
+            <p className="memberRole">Product Designer</p>
           </div>
 
-          <div className="teamMember">
+          {/* <div className="teamMember">
             <img src="" alt="" />
-          </div>
+          </div> */}
+
+          {/* <div className="teamMember">
+            <img src="" alt="" />
+          </div> */}
         </div>
       </div>
 
@@ -66,7 +104,7 @@ export default function About() {
         <p className="partnersTxt">Become a Partner</p>
       </div>
 
-      <div className="team">
+      <div className="letsWork">
         <h2 className="subHeadTxt"> Let's get to work</h2>
         <a href="/message" className="aboutCTA">
           <Button className="buildCTA">Build Your Projects</Button>
