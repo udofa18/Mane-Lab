@@ -6,7 +6,6 @@ import { Button } from "react-bootstrap";
 export default function Message() {
   return (
     <>
-      <Header />
       <div className="aboutHero">
         <h1 className="messageH1">Let’s help you realize that dream.</h1>
         <p className="aboutTxt">
@@ -59,7 +58,6 @@ export default function Message() {
           <Button className="formBtn">Submit</Button>
         </form>
       </div>
-      <Footer />
     </>
   );
 }

@@ -7,12 +7,11 @@ import "./styles.css";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <div style={{width:"100%"}}>
       <div className="heroSection">
         <div className="leftCol">
           <div className="pageHeader">
-            <h1>Let's Build Together</h1>
+            <h1 style={{color:"#0c3959"}}>Let's Build Together</h1>
           </div>
 
           <div className="heroProducts">
@@ -74,7 +73,6 @@ export default function Home() {
           <div></div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

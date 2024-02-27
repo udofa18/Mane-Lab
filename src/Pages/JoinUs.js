@@ -6,7 +6,6 @@ import { Button } from "react-bootstrap";
 export default function JoinUs() {
   return (
     <>
-      <Header />
       <div className="aboutHero">
         <h1>Join Our Team</h1>
         <p className="aboutTxt">
@@ -14,7 +13,7 @@ export default function JoinUs() {
         </p>
       </div>
       <div className="heroSection">
-        <div className="joinDiv">
+        <div className="joinDiv ">
           <img
             src={require("../images/joinUs.png")}
             alt=""
@@ -66,7 +65,6 @@ export default function JoinUs() {
           <Button className="formBtn">Submit</Button>
         </form>
       </div>
-      <Footer />
     </>
   );
 }

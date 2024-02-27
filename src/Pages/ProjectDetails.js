@@ -1,14 +1,12 @@
 import React from "react";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+
 
 export default function ProjectDetails() {
   return (
     <>
-      <Header />
-      <div>
+      <div className="toppad" style={{paddingBottom:"80px"}}>
         <h1>Project Title</h1>
-        <p>
+        <p className="aboutTxt" style={{padding:"5px"}}>
           Lorem ipsum dolor sit amet consectetur. Leo vulputate suscipit
           imperdiet sit posuere cursus. A non lacus in vel in ornare cursus
           mollis. Nec imperdiet sed a dictumst aliquam sem egestas. Elementum eu
@@ -20,7 +18,6 @@ export default function ProjectDetails() {
           etiam luctus et vitae metus.
         </p>
       </div>
-      <Footer />
     </>
   );
 }

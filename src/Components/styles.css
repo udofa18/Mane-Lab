@@ -5,14 +5,18 @@ body {
 
 .header {
   background-color: #0c3959;
-  flex-direction: "row";
   height: 50px;
   align-items: center;
-  justify-content: space-between;
-
+position: fixed;
+margin: auto;
+justify-content:space-between;
+top: 0;
+gap: 250px;
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding:20px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .headerLogo {
@@ -27,6 +31,18 @@ body {
 
   gap: 70px;
   justify-content: space-between;
+}
+.mobileheaderLinks {
+  display: flex ;
+  flex-direction: column ;
+  background-color: #0c3959;
+  z-index: 10;
+  margin: 0;
+  top: 100px;
+  /* width: 100%; */
+  gap: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
 .hearderTxt {
@@ -90,4 +106,87 @@ body {
 
 .footerIcons {
   color: #fff;
+}
+.hidden{
+display: none !important;
+}
+NavLink{
+  font-size: 20px;
+}
+.hamburger{
+  width: 15px;
+  height: 1px;
+  background-color: white;
+  content: icon;
+}
+
+.flex{
+  display: flex;
+}
+.flexcol{
+  flex-direction: column;
+}
+.hamcon{
+  gap: 5px;
+}
+
+.hamburger-menu {
+  /* display: none; */
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Rotate the bars to create close icon effect */
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media only screen and (max-width: 768px) {
+  .header{
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+  .block{
+    display: block !important;
+    }
+    .mobilehidden{
+      display: none !important;
+      }
+      .footer {
+        background-color: #0c3959;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+      width: 100%;
+      padding: 5px;
+      padding-bottom: 0px;
+      margin-top: 2px;
+      }
+      .left-footer {
+        width: 100%;
+      }
+      .right-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: right;
+        /* text-align: right; */
+      }
 }

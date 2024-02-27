@@ -5,8 +5,7 @@ import { Button } from "react-bootstrap";
 
 export default function About() {
   return (
-    <div className="">
-      <Header />
+    <div className="toppad">
 
       <div className="aboutHero">
         <h1>About Måne Labs</h1>
@@ -28,8 +27,8 @@ export default function About() {
       />
 
       <div className="mission">
-        <h2>Our Mission</h2>
-        <p className="aboutTxt">
+        <h2 style={{color:"#0c3959"}}>Our Mission</h2>
+        <p className="aboutTxt" sstyle={{color:"#0c3959"}}>
           To become the leading agency catering to the technological needs of
           individuals and corporations globally.
         </p>
@@ -72,7 +71,6 @@ export default function About() {
           <Button className="buildCTA">Build Your Projects</Button>
         </a>
       </div>
-      <Footer />
     </div>
   );
 }

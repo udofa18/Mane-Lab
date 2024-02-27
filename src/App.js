@@ -7,11 +7,16 @@ import Message from "./Pages/Message";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Projects from "./Pages/Projects";
 import NoPage from "./Pages/NoPage";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
     <div>
+
       <BrowserRouter>
+      <Header/>
+
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -22,7 +27,10 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
+        <Footer/>
+
       </BrowserRouter>
+
     </div>
   );
 }
