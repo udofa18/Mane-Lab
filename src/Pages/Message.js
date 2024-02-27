@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 export default function Message() {
   return (
     <>
-      <div className="aboutHero">
+      <div className="aboutHero toppad">
         <h1 className="messageH1">Let’s help you realize that dream.</h1>
         <p className="aboutTxt">
           Send a message and we’ll reach out to you shortly.{" "}

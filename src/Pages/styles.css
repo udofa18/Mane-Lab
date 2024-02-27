@@ -35,7 +35,9 @@ a {
 .heroSection {
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 10px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
   margin-top: 50px;
   display: flex;
   flex-direction: row;
@@ -108,7 +110,6 @@ a {
 
 .section3 {
   padding: 40px;
-  width: 100%;
 }
 
 .subHeadTxt2 {
@@ -116,6 +117,7 @@ a {
 }
 
 .projects2 {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -139,8 +141,7 @@ a {
 }
 
 .aboutHero {
-  margin-top: -30px;
-
+  padding-top: 4rem;
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
@@ -346,6 +347,7 @@ h2{
         font-size: larger;
       }
       .section3{
+
         padding: 5px;
         padding-top: 20px;
       }

@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 export default function About() {
   return (
-    <div className="toppad">
+    <div className="">
 
       <div className="aboutHero">
         <h1>About Måne Labs</h1>

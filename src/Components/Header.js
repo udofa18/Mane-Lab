@@ -28,7 +28,6 @@ export default function Header() {
 
   const toggleMenu = () => {
     setIsActive(!isActive);
-    console.log("DOMContentLoaded event fired.");
 
   };
   
@@ -37,12 +36,13 @@ export default function Header() {
 
   return (
     <div className="header">
-      <NavLink to="/home">
+      <NavLink to="/home" style={{margin:"auto"}}>
         {" "}
         <img
           src={require("../images/manelogo.png")}
           alt="mane-logo"
           className="headerLogo"
+
         />
       </NavLink>
 
@@ -62,10 +62,10 @@ export default function Header() {
         </NavLink>
       </div>
 
-      <NavLink to="/message" className="mobilehidden">
+      <NavLink to="/message" className="mobilehidden" style={{margin:"auto"}}>
         <Button className="buildCTA">Build Your Projects</Button>
       </NavLink>
-      <div class="hidden block">
+      <div class="hidden block" style={{margin:"auto"}}>
       <div class={`hamburger-menu ${isActive ? "active   " : " "}`} onClick={toggleMenu}>
   <div class="bar"></div>
   <div class="bar"></div>
@@ -76,8 +76,9 @@ export default function Header() {
 <div>
 
 </div>
+
+<div className="hidden block "  style={{position:"absolute", top:"40px", width:"100%",   transition: "transform 0.4s, opacity 0.4s",}}>
 {isActive? (
-<div className="hidden block "  style={{position:"absolute", top:"90px", width:"100vw",   transition: "transform 0.4s, opacity 0.4s",}}>
 <div className="  mobileheaderLinks" >
         <NavLink to="/home" className="hearderTxt">
           Home
@@ -96,9 +97,9 @@ export default function Header() {
         <Button className="buildCTA">Build Your Projects</Button>
       </NavLink>
       </div>
-     
-      </div>) :("")
-}
+      ) :("")}
+      </div>
+
 
 
       </div>
