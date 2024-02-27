@@ -77,23 +77,23 @@ export default function Header() {
 
 </div>
 
-<div className="hidden block "  style={{position:"absolute", top:"40px", width:"100%",   transition: "transform 0.4s, opacity 0.4s",}}>
+<div className="hidden block "  style={{position:"absolute", top:"50px", width:"100%",   transition: "transform 0.4s, opacity 0.4s",}}>
 {isActive? (
-<div className="  mobileheaderLinks" >
-        <NavLink to="/home" className="hearderTxt">
+<div className="  mobileheaderLinks" style={{height:"50rem"}}>
+        <NavLink to="/home" className="hearderTxt" onClick={toggleMenu}>
           Home
         </NavLink>
-        <NavLink to="/about" className="hearderTxt">
+        <NavLink to="/about" className="hearderTxt" onClick={toggleMenu}>
           About
         </NavLink>
-        <NavLink to="/projects" className="hearderTxt">
+        <NavLink to="/projects" className="hearderTxt" onClick={toggleMenu}>
           Projects
         </NavLink>
-        <NavLink to="/joinus" className="hearderTxt">
+        <NavLink to="/joinus" className="hearderTxt" onClick={toggleMenu}>
           Join Our Team
         </NavLink>
 
-        <NavLink to="/message" className="block">
+        <NavLink to="/message" className="block" onClick={toggleMenu}>
         <Button className="buildCTA">Build Your Projects</Button>
       </NavLink>
       </div>

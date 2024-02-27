@@ -282,7 +282,12 @@ h2{
   justify-content: center;
   margin-right: 50px;
 }
-
+input{
+  padding: 20px;
+}
+button{
+  padding: 20px;
+}
 .formInput {
   border-left: 0px;
   border-right: 0px;
@@ -295,8 +300,9 @@ h2{
   border: 0;
   border-radius: 10px;
   background-color: #a8e4f9;
-  height: 30px;
+  /* height: 30px; */
   width: auto;
+  /* margin: auto !important; */
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
@@ -368,8 +374,8 @@ h2{
         font-size: 18px;
       }
       .aboutHero {      
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
         display: flex;
         flex-direction: column;
         align-items: center;
