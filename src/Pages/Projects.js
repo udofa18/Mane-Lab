@@ -3,8 +3,11 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import project from "../Data/Projects.js";
 
 export default function Projects() {
+
+  
   return (
     <>
       <div className="heroSection">
@@ -23,123 +26,22 @@ export default function Projects() {
           />
         </div>
       </div>
- <div className="">     
-   <div className="projectTitle">
-        <div className="projectDiv">
-          <img
-            src={require("../images/project.png")}
-            alt=""
-            className="projectImg"
-          />
-        </div>
-        <div className="projectDiv2">
-          <h2>Project Title</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <NavLink href="/projectdetails">
-            <Button className="buildCTA">View more</Button>
-          </NavLink>
-        </div>
-  </div>
-  
-<div className="projectTitle">
-        <div className="projectDiv">
-          <img
-            src={require("../images/project.png")}
-            alt=""
-            className="projectImg"
-          />
-        </div>
-        <div className="projectDiv2">
-          <h2>Project Title</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <a href="/projectdetails">
-            <Button className="buildCTA">View more</Button>
-          </a>
-        </div>
-</div>
-<div className="projectTitle">
-        <div className="projectDiv">
-          <img
-            src={require("../images/project.png")}
-            alt=""
-            className="projectImg"
-          />
-        </div>
-        <div className="projectDiv2">
-          <h2>Project Title</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <a href="/projectdetails">
-            <Button className="buildCTA">View more</Button>
-          </a>
-        </div>
-  </div>
-      <div className="projectTitle">
-        <div className="projectDiv">
-          <img
-            src={require("../images/project.png")}
-            alt=""
-            className="projectImg"
-          />
-        </div>
-        <div className="projectDiv2">
-          <h2>Project Title</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <a href="/projectdetails">
-            <Button className="buildCTA">View more</Button>
-          </a>
-        </div>
-      </div>
-      <div className="projectTitle">
-        <div className="projectDiv">
-          <img
-            src={require("../images/project.png")}
-            alt=""
-            className="projectImg"
-          />
-        </div>
-        <div className="projectDiv2">
-          <h2>Project Title</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <a href="/projectdetails">
-            <Button className="buildCTA">View more</Button>
-          </a>
-        </div>
-      </div>
+
+ <div className="">    
+ <div className="" style={{width:"100%"}}>
+        {project.map((project) => (
+          <div key={project.id} className=" projectTitle flex p-5 gap-5 ">
+            <img src={project.img} width={300} className="projectDiv sm:w-40 sm:h-36"></img>
+            <span className="projectDiv2 justify-between">
+              <h2 className="text-2xl">{project.name}</h2>
+              <p>{project.description.split(' ').slice(0, 20).join(' ')}...</p>
+              <NavLink to={`/projectdetails/${project.id}`}>
+              <Button style={{ backgroundColor: "#A8E4F9" }} className="buildCTA">View More</Button>
+            </NavLink></span>
+          </div>
+        ))}
+      </div> 
+
       </div>
     </>
   );

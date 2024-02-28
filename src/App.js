@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/joinus" element={<JoinUs />} />
           <Route path="/message" element={<Message />} />
-          <Route path="/projectdetails" element={<ProjectDetails />} />
+          <Route path="/projectdetails/:id" element={<ProjectDetails />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<NoPage />} />
         </Routes>

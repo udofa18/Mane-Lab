@@ -152,7 +152,7 @@ a {
   background-color: #a8e4f9;
   border: 0;
   border-radius: 7px;
-  padding: 7px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -166,7 +166,7 @@ a {
   margin-top: 20px;
 }
 .toppad{
-  padding-top: 10rem;
+  padding-top: 10rem !important;
 
 }
 h2{
@@ -362,7 +362,7 @@ button{
 
       }
       .toppad{
-        padding-top: 7rem;
+        padding-top: 7rem !important;
         width: 100vw;
       }
       .aboutTxt {
@@ -431,5 +431,17 @@ button{
         gap: 40px;
         /* align-items: center; */
         justify-content: center;
+      }
+      .mission{
+        padding-left: 0px;
+        padding-right: 0px;
+        /* padding-top: 40px; */
+        /* padding-bottom: 100px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .mobimg{
+        width: 100%;
       }
 }
