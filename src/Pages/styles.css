@@ -45,7 +45,7 @@ a {
 }
 
 .leftCol {
-  width: 40%;
+  width: 45%;
 }
 
 .pageHeader {
@@ -81,6 +81,8 @@ a {
   padding: 0;
   margin: 0;
   width: 100%;
+  /* border-radius: 0px; */
+  border-bottom-left-radius: 20px;
 }
 
 .section2 {
@@ -89,8 +91,14 @@ a {
   margin-top: 2px;
 }
 
+.serviceIcons {
+  color: #fff;
+  font-size: 50px;
+}
+
 .subHeadTxt {
   color: #fff;
+  /* text-align: center; */
 }
 
 .projects {
@@ -104,6 +112,7 @@ a {
   border: 0;
   border-radius: 7px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .section3 {
@@ -117,8 +126,9 @@ a {
 .projects2 {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
   margin-top: 30px;
 }
 
@@ -128,14 +138,16 @@ a {
   background-color: #0c3959;
   border-radius: 7px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .servicesTxt {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 800;
+  text-align: center;
 }
 
 .aboutHero {
@@ -190,24 +202,59 @@ h2{
 
 .team {
   background-color: #0c3959;
+  padding: 40px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
+  /* padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px; */
+}
+
+.ourTeamTxt {
+  color: #fff;
+  text-align: center;
+}
+
+.teamDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 40px;
-  padding-bottom: 50px;
 }
 
 .teamMember {
-  width: 150px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: #fff;
-  border-radius: 7px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -10px;
+  /* margin: -10px; */
+}
+
+.teamImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.memberName {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.memberRole {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: -12px;
 }
 
 .partnersTxt {
@@ -218,6 +265,15 @@ h2{
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+.letsWork {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c3959;
+  padding: 40px;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .aboutCTA {
@@ -252,6 +308,9 @@ h2{
 
 .projectImg {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .projectDiv2 {
@@ -259,7 +318,7 @@ h2{
   /* background-color: yellow; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .joinDiv {
@@ -269,6 +328,7 @@ h2{
 
 .joinImg {
   height: 100%;
+  border-radius: 20px;
 }
 
 .form {

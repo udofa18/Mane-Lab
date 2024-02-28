@@ -4,6 +4,9 @@ import Footer from "../Components/Footer";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles.css";
+import { NavLink } from "react-router-dom";
+// import { HashLink as Link } from "react-router-hash-link";
+// import {fa-folder} from "@fontawesome/free-regular-svg-icons";
 
 export default function Home() {
   return (
@@ -21,6 +24,7 @@ export default function Home() {
             <div className="serviceDiv">Python</div>
             <div className="serviceDiv">Ruby</div>
             <div className="serviceDiv">Java</div>
+            <div className="serviceDiv">Webflow</div>
           </div>
         </div>
 
@@ -33,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section2">
+      <div id="projects" className="section2">
         <div className="sectionDiv">
           <h2 className="subHeadTxt">Projects</h2>
         </div>
@@ -45,7 +49,9 @@ export default function Home() {
         </div>
 
         <div className="viewDiv">
-          <Button className="viewBtn">View more</Button>
+          <NavLink to="/projects">
+            <Button className="viewBtn">View more</Button>
+          </NavLink>
         </div>
       </div>
 
@@ -56,21 +62,51 @@ export default function Home() {
 
         <div className="projects2">
           <div className="services">
-            <img src="" alt="" />
+            <FontAwesomeIcon
+              icon="fa-regular fa-folder"
+              className="serviceIcons"
+            />
+
             <p className="servicesTxt">Product Consulting</p>
           </div>
 
           <div className="services">
-            <img src="" alt="" />
-            <p className="servicesTxt">Web Development</p>
+            <FontAwesomeIcon
+              icon="fa-solid fa-display"
+              className="serviceIcons"
+            />
+            <p className="servicesTxt">Web Services</p>
           </div>
 
           <div className="services">
-            <img src="" alt="" />
+            <FontAwesomeIcon
+              icon="fa-solid fa-mobile-screen-button"
+              className="serviceIcons"
+            />
             <p className="servicesTxt">App Development</p>
           </div>
 
-          <div></div>
+          <div className="services">
+            <FontAwesomeIcon
+              icon="fa-solid fa-pen-nib"
+              className="serviceIcons"
+            />
+            <p className="servicesTxt">UI/UX Design</p>
+          </div>
+
+          <div className="services">
+            <FontAwesomeIcon
+              icon="fa-solid fa-database"
+              className="serviceIcons"
+            />
+
+            <p className="servicesTxt">CMS Solutions</p>
+          </div>
+
+          <div className="services">
+            <FontAwesomeIcon icon="fa-solid fa-code" className="serviceIcons" />
+            <p className="servicesTxt">No-code Development</p>
+          </div>
         </div>
       </div>
     </div>

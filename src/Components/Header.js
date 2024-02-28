@@ -3,24 +3,10 @@ import { Button } from "react-bootstrap";
 import "./styles.css";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const hamburgerMenu = document.querySelector('.hamburger-menu');
-  
-//   if (hamburgerMenu) {
-//       hamburgerMenu.addEventListener('click', function() {
-//           console.log("Hamburger menu clicked.");
-//           this.classList.toggle('active');
-//       });
-//   }
-// });
+
+
 
 export default function Header() {
 
